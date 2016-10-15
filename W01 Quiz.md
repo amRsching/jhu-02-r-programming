@@ -1,168 +1,177 @@
-R Programming µÚÒ»ÖÜ Quiz
+R Programming ç¬¬ä¸€å‘¨ Quiz
 ===
 
-[@ÉúÎïÄãºÃÉúÎïÔÙ¼û](http://www.weibo.com/biobyelogy)
+[@ç”Ÿç‰©ä½ å¥½ç”Ÿç‰©å†è§](http://www.weibo.com/biobyelogy)
 
 
 ### Question 1
 R was developed by statisticians working at
 
-> »Ø¹Ë PPT 01 Overview and History of R¡£PPT ÀïÖ»Ìá¹ıµØµãÊÇĞÂÎ÷À¼¡£
+> å›é¡¾ PPT 01 Overview and History of Rã€‚PPT é‡Œåªæè¿‡åœ°ç‚¹æ˜¯æ–°è¥¿å…°ã€‚
 
 ===
 
 ### Question 2
 The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition?
 
-> »Ø¹Ë PPT 01 Overview and History of R¡£
+> å›é¡¾ PPT 01 Overview and History of Rã€‚
 
 ===
 
 ### Question 3
 In R the following are all atomic data types EXCEPT
 
-> »Ø¹Ë PPT 03 Data Types£¬ÎåÖÖ»ù±¾Êı¾İÀàĞÍ¡£
+> å›é¡¾ PPT 03 Data Typesï¼Œäº”ç§åŸºæœ¬æ•°æ®ç±»å‹ã€‚
 
 ===
 
 ### Question 4
 If I execute the expression `x <- 4` in R, what is the class of the object `x` as determined by the `class()` function?
 
-> »Ø¹Ë PPT 03 Data Types£¬numeric ºÍ integer µÄÇø±ğ¡£
+> å›é¡¾ PPT 03 Data Typesï¼Œnumeric å’Œ integer çš„åŒºåˆ«ã€‚
 
 ===
 
 ### Question 5
 What is the class of the object defined by `x <- c(4, TRUE)`?
 
-> »Ø¹Ë PPT 03 Data Types£¬vector ÄÚÔªËØÀàĞÍÒ»ÖÂ¡£²»Ò»ÖÂÊ±£¬»áÇ¿ÖÆ×ª»»¡£
+> å›é¡¾ PPT 03 Data Typesï¼Œvector å†…å…ƒç´ ç±»å‹ä¸€è‡´ã€‚ä¸ä¸€è‡´æ—¶ï¼Œä¼šå¼ºåˆ¶è½¬æ¢ã€‚
 
 ===
 
 ### Question 6
 If I have two vectors `x <- c(1, 3, 5)` and `y <- c(3, 2, 10)`, what is produced by the expression `cbind(x, y)`?
 
-> »Ø¹Ë PPT 03 Data Types£¬Çø·Ö `cbind` ºÍ `rbind`¡£
+> å›é¡¾ PPT 03 Data Typesï¼ŒåŒºåˆ† `cbind` å’Œ `rbind`ã€‚
 
 ===
 
 ### Question 7
 A key property of vectors in R is that
 
-> »Ø¹Ë PPT 03 Data Types£¬ÉÏÃæÒÑ¾­Ìá¼°¡£
+> å›é¡¾ PPT 03 Data Typesï¼Œä¸Šé¢å·²ç»æåŠã€‚
 
 ===
 
 ### Question 8
 Suppose I have a list defined as `x <- list(2, "a", "b", TRUE)`. What does `x[[2]]` give me?
 
-> »Ø¹Ë PPT 04 Subsetting¡£ÕâÈı¸ö subsetting operator ·Ç³£ÖØÒª£º
-> - `[<expression>]` ·µ»Ø·ûºÏ `<expression>` µÄ×Ó¼¯£¬ÀàĞÍÓëÈ«¼¯ÏàÍ¬£»
-> - `[[<expression>]]` ·µ»Ø·ûºÏ `<expression>` µÄµ¥¸öÔªËØ£¬ÀàĞÍÎªËùµÃÔªËØÀàĞÍ£»
-> - `$<name>` ·µ»Ø `<name>` Ö¸ÏòµÄµ¥¸öÔªËØ£¬ÀàĞÍÎªËùµÃÔªËØÀàĞÍ¡£²»½ÓÊÜ±í´ïÊ½¡£
+> å›é¡¾ PPT 04 Subsettingã€‚è¿™ä¸‰ä¸ª subsetting operator éå¸¸é‡è¦ï¼š
+> - `[<expression>]` è¿”å›ç¬¦åˆ `<expression>` çš„å­é›†ï¼Œç±»å‹ä¸å…¨é›†ç›¸åŒï¼›
+> - `[[<expression>]]` è¿”å›ç¬¦åˆ `<expression>` çš„å•ä¸ªå…ƒç´ ï¼Œç±»å‹ä¸ºæ‰€å¾—å…ƒç´ ç±»å‹ï¼›
+> - `$<name>` è¿”å› `<name>` æŒ‡å‘çš„å•ä¸ªå…ƒç´ ï¼Œç±»å‹ä¸ºæ‰€å¾—å…ƒç´ ç±»å‹ã€‚ä¸æ¥å—è¡¨è¾¾å¼ã€‚
+> ç”¨æ³• a %in% vector, aå€¼æ˜¯å¦åŒ…å«äºvectorä¸­ï¼Œä¸ºçœŸè¾“å‡ºTUREï¼Œå¦è€…è¾“å‡ºFALSE
 
 ===
 
 ### Question 9
-Suppose I have a vector `x <- 1:4` and `y <- 2:3`. What is produced by the expression `x + y`?
+Suppose I have a vector `x <- 1:4` and `y <- 2`. What is produced by the expression `x + y`?
 
-> ÔÚ RStudio console ÊÔÑéÒ»ÏÂ¼´¿É£¬½áÂÛÒª¼Ç×¡¡£
+> åœ¨ RStudio console è¯•éªŒä¸€ä¸‹å³å¯ï¼Œç»“è®ºè¦è®°ä½ã€‚
 
 ===
 
 ### Question 10
 Suppose I have a vector `x <- c(17, 14, 4, 5, 13, 12, 10)` and I want to set all elements of this vector that are greater than 10 to be equal to `4`. What R code achieves this?
 
-> - `[<expression>]` ·µ»Ø·ûºÏ `<expression>` µÄ×Ó¼¯£»
-> - `==` ÊÇÂß¼­ÅĞ¶Ï·ûºÅ£¬`<-` »òÕß `=` ²ÅÊÇ¸³Öµ¡£
+> - `[<expression>]` è¿”å›ç¬¦åˆ `<expression>` çš„å­é›†ï¼›
+> - `==` æ˜¯é€»è¾‘åˆ¤æ–­ç¬¦å·ï¼Œ`<-` æˆ–è€… `=` æ‰æ˜¯èµ‹å€¼ã€‚
 
 ===
 
 ### Question 11
 In the dataset provided for this Quiz, what are the column names of the dataset?
 
-> - Ğ´´úÂëÖ®Ç°×¢Òâµ±Ç° `working directory`£¬¿ÉÓÃº¯Êı `setwd ÉèÖÃ£»
-> - º¯Êı `read.csv`£»
-> - º¯Êı `colnames`£»
-> - ´ğ°¸ÆäÊµºóÃæµÄÌâ¸ÉÀïÓĞ¡­¡­
+> - å†™ä»£ç ä¹‹å‰æ³¨æ„å½“å‰ `working directory`ï¼Œå¯ç”¨å‡½æ•° `setwd è®¾ç½®ï¼›
+
+> x <- read.csv("hw1_data.csv")
+> colnames(x)
 
 ===
 
 ### Question 12
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
 
-> º¯Êı `head`¡£
+> head(x,2)
 
 ===
 
 ### Question 13
 How many observations (i.e. rows) are in this data frame?
 
-> - º¯Êı `nrow`£»
-> - ´ğ°¸ÆäÊµÏÂÒ»ÌâÑ¡ÏîÀïÒ²ÓĞ¡­¡­
+> nrow(x)
 
 ===
 
 ### Question 14
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
 
-> º¯Êı `tail`¡£
+> tail(x,2)
 
 ===
 
 ### Question 15
 What is the value of `Ozone` in the 47th row?
 
-> ÏÈÑ¡³ö `Ozone`£¬ÔÙÑ¡³öµÚ 47 ¸öÊı¾İ¡£
+> x$Ozone[[47]]
 
 ===
 
 ### Question 16
 How many missing values are in the `Ozone` column of this data frame?
 
-> ´ËÌâ·½·¨ºÜ¶à£¬ÕâÀï¾ÙÁ½¸ö¡£
-> ·½·¨Ò»£º
-> - ÓÃº¯Êı `na.omit` µÃµ½È¥³ı `NA` ºóµÄ `data$Ozone` ÏòÁ¿¡£
-> - ÓÃº¯Êı `length` µÃµ½ÏòÁ¿ÄÚÔªËØ¸öÊı£¬ºÍ°üº¬ `NA` µÄ `Ozone` ÏòÁ¿³¤¶ÈÏà±È½Ï¡£
+> æ­¤é¢˜æ–¹æ³•å¾ˆå¤šï¼Œè¿™é‡Œä¸¾ä¸¤ä¸ªã€‚
+> æ–¹æ³•ä¸€ï¼š
+> - ç”¨å‡½æ•° `na.omit` å¾—åˆ°å»é™¤ `NA` åçš„ `data$Ozone` å‘é‡ã€‚
+> - ç”¨å‡½æ•° `length` å¾—åˆ°å‘é‡å†…å…ƒç´ ä¸ªæ•°ï¼Œå’ŒåŒ…å« `NA` çš„ `Ozone` å‘é‡é•¿åº¦ç›¸æ¯”è¾ƒã€‚
 >
-> ·½·¨¶ş£º
-> - ÏÈÑ¡³ö `Ozone`£»
-> - ÓÃº¯Êı `is.na` µÃµ½Ò»¸ö `Ozone` ÖĞÊÇ·ñÊÇ `NA` µÄ `logical` ÏòÁ¿£»
-> - ÏòÁ¿ÖĞ£¬`TRUE` Ïàµ±ÓÚ `1`£¬`FALSE` Ïàµ±ÓÚ `0`£¬ÓÃ `sum` ÇóºÍµÃµ½ `TRUE` ×ÜÊı¡£
+> æ–¹æ³•äºŒï¼š
+> - å…ˆé€‰å‡º `Ozone`ï¼›
+> - ç”¨å‡½æ•° `is.na` å¾—åˆ°ä¸€ä¸ª `Ozone` ä¸­æ˜¯å¦æ˜¯ `NA` çš„ `logical` å‘é‡ï¼›
+> - å‘é‡ä¸­ï¼Œ`TRUE` ç›¸å½“äº `1`ï¼Œ`FALSE` ç›¸å½“äº `0`ï¼Œç”¨ `sum` æ±‚å’Œå¾—åˆ° `TRUE` æ€»æ•°ã€‚
+> y <- x$Ozone
+> sum(is.na(y))
 
 ===
 
 ### Question 17
 What is the mean of the `Ozone` column in this dataset? Exclude missing values (coded as `NA`) from this calculation.
 
-> º¯Êı `mean` ÓĞÒ»¸öÑ¡Ïî `na.rm = T`£¬¿ÉÔÚ¼ÆËãÊ±È¥³ı `NA` ÔªËØ¡£
+> mean(y[!is.na(y)]) OR
+
+> å‡½æ•° `mean` æœ‰ä¸€ä¸ªé€‰é¡¹ `na.rm = T`ï¼Œå¯åœ¨è®¡ç®—æ—¶å»é™¤ `NA` å…ƒç´ ã€‚
+> mean(y,na.rm = T)
 
 ===
 
 ### Question 18
 Extract the subset of rows of the data frame where `Ozone` values are above `31` and `Temp` values are above `90`. What is the mean of `Solar.R` in this subset?
 
-> ´ËÌâÓĞºÜ¶à·½·¨£º
-> ·½·¨Ò»£º
-> - ÓÃÌõ¼ş `data$Ozone > 31 & data$Temp > 90` Ñ¡³öËùĞèµÄ `data$Solar`£»
-> - ×¢Òâ `&` ºÍ `&&` µÄÇø±ğ£¬Ç°Õß·µ»ØÒ»¸öÏòÁ¿£¬ºóÕß·µ»Øµ¥Ò» `logical` Öµ£¬ËùÒÔÕâÀï±ØĞëÓÃ `&`£»
-> - µ÷ÓÃº¯Êı `mean`¡£
+> æ­¤é¢˜æœ‰å¾ˆå¤šæ–¹æ³•ï¼š
+> æ–¹æ³•ä¸€ï¼š
+> - ç”¨æ¡ä»¶ `data$Ozone > 31 & data$Temp > 90` é€‰å‡ºæ‰€éœ€çš„ `data$Solar`ï¼›
+> - æ³¨æ„ `&` å’Œ `&&` çš„åŒºåˆ«ï¼Œå‰è€…è¿”å›ä¸€ä¸ªå‘é‡ï¼Œåè€…è¿”å›å•ä¸€ `logical` å€¼ï¼Œæ‰€ä»¥è¿™é‡Œå¿…é¡»ç”¨ `&`ï¼›
+> - è°ƒç”¨å‡½æ•° `mean`ã€‚
 >
-> ·½·¨¶ş£º
-> - ÓÃº¯Êı `subset` Ñ¡³öËùĞèµÄ `Solar` Êı¾İ£»
-> - µ÷ÓÃº¯Êı `mean`¡£
+> æ–¹æ³•äºŒï¼š
+> - ç”¨å‡½æ•° `subset` é€‰å‡ºæ‰€éœ€çš„ `Solar` æ•°æ®ï¼›
+> - è°ƒç”¨å‡½æ•° `mean`ã€‚
+> z <- subset(x,x$Ozone > 31 & x$Temp > 90, select = Solar.R)
+> mean(z$Solar.R)
 
 ===
 
 ### Question 19
 What is the mean of `Temp` when `Month` is equal to `6`?
 
-> ²ÎÕÕÉÏÌâ¡£×¢Òâ `==` ÊÇÂß¼­ÅĞ¶Ï·û£¬`=` ÊÇ¸³Öµ·ûºÅ£¬ÕâÀï±ØĞëÓÃÇ°Õß¡£
+> å‚ç…§ä¸Šé¢˜ã€‚æ³¨æ„ `==` æ˜¯é€»è¾‘åˆ¤æ–­ç¬¦ï¼Œ`=` æ˜¯èµ‹å€¼ç¬¦å·ï¼Œè¿™é‡Œå¿…é¡»ç”¨å‰è€…ã€‚
+> w <- x$Temp[x$Month == 6]
+> mean(w)
 
 ===
 
 ### Question 20
 What was the maximum `ozone` value in the month of May (i.e. `Month = 5`)?
 
-> ²ÎÕÕÉÏÌâ¡£
+> max(x$Ozone[x$Month == 5],na.rm = T)
 
