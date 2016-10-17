@@ -1,7 +1,7 @@
-R Programming µÚ¶þÖÜ Quiz
+R Programming ç¬¬äºŒå‘¨ Quiz
 ===
 
-[@ÉúÎïÄãºÃÉúÎïÔÙ¼û](http://www.weibo.com/biobyelogy)
+[@ç”Ÿç‰©ä½ å¥½ç”Ÿç‰©å†è§](http://www.weibo.com/biobyelogy)
 
 
 ### Question 1
@@ -13,7 +13,8 @@ cube <- function(x, n) {
 ```
 What is the result of running `cube(3)` in R after defining this function?
 
->  »Ø¹Ë PPT 02 Functions£¬ÖªÊ¶µã lazy evaluation¡£
+> å›žé¡¾ PPT 02 Functionsï¼ŒçŸ¥è¯†ç‚¹ lazy evaluationã€‚
+> 27
 
 ===
 
@@ -27,7 +28,7 @@ if(x > 5) {
 ```
 Why?
 
-> `if` µÄÅÐ¶ÏÌõ¼þ½á¹ûÎ¨Ò»£¬²»»áÉú³ÉÒ»¸öÏòÁ¿¡£
+> `if` çš„åˆ¤æ–­æ¡ä»¶ç»“æžœå”¯ä¸€ï¼Œä¸ä¼šç”Ÿæˆä¸€ä¸ªå‘é‡ã€‚
 
 ===
 
@@ -51,7 +52,8 @@ f(3)
 ```
 What value is returned?
 
-> »Ø¹Ë PPT 04 Scoping Rules£¬ÖªÊ¶µã lexical scoping¡£±äÁ¿µÄÖµºÍº¯Êý¶¨ÒåÒ»Æð´ò°ü³ÉÒ»¸ö closure¡£×ÔÓÉ±äÁ¿µÄÖµÊ×ÏÈÈ¡¾öÓÚº¯Êý±»¶¨ÒåÊ±ËüÃÇ±»¸³ÓèµÄÖµ£¬¶ø²»ÊÇº¯Êý±»µ÷ÓÃÊ±µÄÖµ¡£´ËÌâÖÐ£¬`z` ÔÚ `f` ±»¶¨ÒåÊ±ÒÑÓÐ¸³Öµ `z <- 4` £¬ËùÒÔ `f` ±»µ÷ÓÃÊ± `z <- 10` ²¢²»Æð×÷ÓÃ¡£
+> å›žé¡¾ PPT 04 Scoping Rulesï¼ŒçŸ¥è¯†ç‚¹ lexical scopingã€‚å˜é‡çš„å€¼å’Œå‡½æ•°å®šä¹‰ä¸€èµ·æ‰“åŒ…æˆä¸€ä¸ª closureã€‚è‡ªç”±å˜é‡çš„å€¼é¦–å…ˆå–å†³äºŽå‡½æ•°è¢«å®šä¹‰æ—¶å®ƒä»¬è¢«èµ‹äºˆçš„å€¼ï¼Œè€Œä¸æ˜¯å‡½æ•°è¢«è°ƒç”¨æ—¶çš„å€¼ã€‚æ­¤é¢˜ä¸­ï¼Œ`z` åœ¨ `f` è¢«å®šä¹‰æ—¶å·²æœ‰èµ‹å€¼ `z <- 4` ï¼Œæ‰€ä»¥ `f` è¢«è°ƒç”¨æ—¶ `z <- 10` å¹¶ä¸èµ·ä½œç”¨ã€‚
+> 10
 
 ===
 
@@ -67,7 +69,8 @@ y <- if(x < 3) {
 ```
 What is the value of 'y' after evaluating this expression?
 
-> »Ø¹Ë PPT 01 Control Structures£¬`if` ½á¹¹¿ÉÖ±½ÓÓÃÓÚ¸ø±äÁ¿¸³Öµ¡£
+> å›žé¡¾ PPT 01 Control Structuresï¼Œ`if` ç»“æž„å¯ç›´æŽ¥ç”¨äºŽç»™å˜é‡èµ‹å€¼ã€‚
+> 10
 
 ===
 
@@ -89,39 +92,45 @@ h <- function(x, y = NULL, d = 3L) {
 ```
 Which symbol in the above function is a free variable?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£ÔÚº¯Êý¶¨ÒåÖÐ£¬³ý²ÎÊýÍâ£¬Ã»ÓÐÃ÷È·ÖµµÄ±äÁ¿¾ÍÊÇ×ÔÓÉ±äÁ¿¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚åœ¨å‡½æ•°å®šä¹‰ä¸­ï¼Œé™¤å‚æ•°å¤–ï¼Œæ²¡æœ‰æ˜Žç¡®å€¼çš„å˜é‡å°±æ˜¯è‡ªç”±å˜é‡ã€‚
+> f
 
 ===
 
 ### Question 6
 What is an environment in R?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚
+> a collection of symbol/value pair
 
 ===
 
 ### Question 7
 The R language uses what type of scoping rule for resolving free variables?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚
+> lexical scoping
 
 ===
 
 ### Question 8
 How are free variables in R functions resolved?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚
+> The values of free variables are searched for in the environment in which the function was defined
 
 ===
 
 ### Question 9
 What is one of the consequences of the scoping rules used in R?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚
+> All objects must be stored in memory
 
 ===
 
 ### Question 10
 In R, what is the parent frame?
 
-> »Ø¹Ë PPT 04 Scoping Rules¡£
+> å›žé¡¾ PPT 04 Scoping Rulesã€‚
+> the environment in which the function is called
