@@ -1,7 +1,7 @@
-R Programming µÚÈýÖÜ Quiz
+R Programming ç¬¬ä¸‰å‘¨ Quiz
 ===
 
-[@ÉúÎïÄãºÃÉúÎïÔÙ¼û](http://www.weibo.com/biobyelogy)
+[@ç”Ÿç‰©ä½ å¥½ç”Ÿç‰©å†è§](http://www.weibo.com/biobyelogy)
 
 
 ### Question 1
@@ -12,14 +12,17 @@ data(iris)
 ```
 There will be an object called 'iris' in your workspace. In this dataset, what is the mean of 'Sepal.Length' for the species virginica? (Please only enter the numeric result and nothing else.)
 
-> ÓÃ `split` º¯Êý½« `iris` °´ÕÕ `Sepal.Length` ·Ö×é£¬½á¹ûÎªÒ»¸ö `list`£¬Ñ¡³ö `list` ÖÐ `virginica` ÄÇÒ»×é£¬·ÅÈë `mean` º¯Êý¡£
+> ç”¨ `split` å‡½æ•°å°† `iris` æŒ‰ç…§ `Sepal.Length` åˆ†ç»„ï¼Œç»“æžœä¸ºä¸€ä¸ª `list`ï¼Œé€‰å‡º `list` ä¸­ `virginica` é‚£ä¸€ç»„ï¼Œæ”¾å…¥ `mean` å‡½æ•°ã€‚
+> s <- tapply(iris$Sepal.Length,iris$Species,mean)
+> round(s)
 
 ===
 
 ### Question 2
 Continuing with the 'iris' dataset from the previous Question, what R code returns a vector of the means of the variables 'Sepal.Length', 'Sepal.Width', 'Petal.Length', and 'Petal.Width'?
 
-> »Ø¹Ë PPT 02 apply£¬`apply(Êý¾Ý¼¯, Î¬¶È, º¯Êý, ...)`¡£
+> å›žé¡¾ PPT 02 applyï¼Œ`apply(æ•°æ®é›†, ç»´åº¦, å‡½æ•°, ...)`ã€‚
+> apply(iris[, 1:4], 2, mean)
 
 ===
 
@@ -31,21 +34,26 @@ data(mtcars)
 ```
 There will be an object names 'mtcars' in your workspace. How can one calculate the average miles per gallon (mpg) by number of cylinders in the car (cyl)?
 
-> »Ø¹Ë PPT 03 tapply£¬`tapply(Êý¾Ý¼¯, ·Ö×é, º¯Êý, ...)`¡£
+> å›žé¡¾ PPT 03 tapplyï¼Œ`tapply(æ•°æ®é›†, åˆ†ç»„, å‡½æ•°, ...)`ã€‚
+> tapply(mtcars$mpg, mtcars$cyl, mean)
+> with(mtcars, tapply(mpg, cyl, mean))
+> sapply(split(mtcars$mpg, mtcars$cyl), mean)
 
 ===
 
 ### Question 4
 Continuing with the 'mtcars' dataset from the previous Question, what is the absolute difference between the average horsepower of 4-cylinder cars and the average horsepower of 8-cylinder cars?
 
-> ´úÂëºÍÉÏÒ»ÌâÀàËÆ¡£µÃ³öÆ½¾ùÖµÖ®ºóÏà¼õÈ¡¾ø¶ÔÖµ¡£
+> ä»£ç å’Œä¸Šä¸€é¢˜ç±»ä¼¼ã€‚å¾—å‡ºå¹³å‡å€¼ä¹‹åŽç›¸å‡å–ç»å¯¹å€¼ã€‚
+> s <- tapply(mtcars$hp, mtcars$cyl, mean)
+> round(abs(s["4"]-s["8"]))
 
 ===
 
 ### Question 5
 If you run `debug(ls)`, what happens when you next call the 'ls' function?
 
-> »Ø¹Ë PPT 06 debugging¡£×¢ÒâÊ¹ÓÃ `Q` ÃüÁîÍË³ö `browser`¡£
-
+> å›žé¡¾ PPT 06 debuggingã€‚æ³¨æ„ä½¿ç”¨ `Q` å‘½ä»¤é€€å‡º `browser`ã€‚
+> Execution of the 'ls' function will suspend at the beginning of the function and you will be in the browser.
 
 
